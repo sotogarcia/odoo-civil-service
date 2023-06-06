@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <!-- VIEWS: "Spanish govern"
+
+            - Model·········: academy.public.tendering.gob.item
+            - _rec_name·····: id
+            - Domain········: []
+            - Context·······: {}
+            - Parent menu ··: academy_public_tendering_rss.academy_public_tendering_rss
+            - View priority·: 16    Sequence····: 10
+            - Action help···: There is not goblocal feed items
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <!-- Tree view for "academy.public.tendering.gob.item" -->
+        <record id="view_academy_public_tendering_gob_item_tree" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.gob.item.tree</field>
+            <field name="model">academy.public.tendering.gob.item</field>
+            <field name="type">tree</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="arch" type="xml">
+                <tree string="academy_public_tendering_bulletin_data_tree" create="1" delete="1" edit="1">
+                    <field name="administration" class="oe_field_administration" />
+                    <field name="hiring_type" class="oe_field_hiring_type" />
+                    <field name="access_system" class="oe_field_access_system" />
+                    <field name="publication_date" class="oe_field_publication_date" />
+                    <field name="code" />
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form view for "academy.public.tendering.gob.item" -->
+        <record id="view_academy_public_tendering_gob_item_form" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.gob.item.form</field>
+            <field name="model">academy.public.tendering.gob.item</field>
+            <field name="type">form</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="arch" type="xml">
+                <form string="academy_public_tendering_bulletin_data_form" create="1" delete="1" edit="1">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <widget name="web_ribbon" title="Archived" bg_color="bg-danger" attrs="{'invisible': [('active', '=', True)]}"/>
+                            <button name="new_process" type="object"
+                                class="oe_stat_button oe_read_only" icon="fa-plus-square"
+                                attrs="{'invisible': [('process_ids', '&lt;&gt;', [])]}">
+                                <span>New process</span>
+                            </button>
+
+                            <button name="open_process" type="object"
+                                class="oe_stat_button oe_read_only" icon="fa-pencil-square-o"
+                                attrs="{'invisible': [('process_ids', '=', [])]}">
+                                <span>Edit process</span>
+                            </button>
+                        </div>
+
+                        <div class="row academy-tests-test-data">
+                            <div class="col-12">
+                                <div class="oe_title">
+                                    <field name="active" invisible="1" />
+                                    <field name="id" class="oe_field_id" invisible="1" />
+                                    <field name="administration_exists" invisible="1" />
+                                    <field name="hiring_type_exists" invisible="1" />
+                                    <field name="access_system_exists" invisible="1" />
+                                    <field name="process_ids" invisible="1" />
+
+                                    <label for="display_name" class="oe_edit_only" />
+                                    <h1>
+                                        <field name="display_name" readonly="1"
+                                            class="oe_field_display_name" />
+                                    </h1>
+                                </div>
+                            </div>
+                        </div><!-- row -->
+
+                        <group col="4">
+
+                            <separator colspan="4" string="Administration" />
+                            <field name="scope" class="oe_field_scope" />
+                            <field name="geografic_field" class="oe_field_geografic_field" />
+
+                            <field name="administration" class="oe_field_administration"
+                                    style="color: green;" attrs="{'invisible': [('administration_exists', '!=', True)]}" />
+                            <field name="administration_unit" class="oe_field_administration_unit"
+                                    style="color: green;" attrs="{'invisible': [('administration_exists', '!=', True)]}" />
+
+                            <field name="administration" class="oe_field_administration"
+                                style="color: red;" attrs="{'invisible': [('administration_exists', '=', True)]}" />
+                            <field name="administration_unit" class="oe_field_administration_unit"
+                                    style="color: red;" attrs="{'invisible': [('administration_exists', '=', True)]}" />
+                            <separator colspan="4" />
+                            <field name="publication_date" class="oe_field_publication_date" />
+                            <field name="term" class="oe_field_term" />
+                            <field name="term_comment" colspan="4"
+                                attrs="{'invisible': [('term_comment', '=', False)]}"
+                                class="oe_field_term_comment text-warning" />
+                        </group>
+
+                        <group col="4" string="Details">
+                            <field name="description" class="oe_field_description" colspan="4" />
+                            <field name="announced" class="oe_field_announced" />
+                            <field name="unoccupied" class="oe_field_unoccupied" />
+                            <field name="internal" class="oe_field_internal" />
+                            <field name="disabled" class="oe_field_disabled" />
+                            <field name="comment"  colspan="4"
+                                attrs="{'invisible': [('comment', '=', False)]}"
+                                class="oe_field_comment text-info" />
+                        </group>
+
+                        <group col="4">
+                            <group col="2" colspan="2" string="Vacancy">
+                                <field name="hiring_type" class="oe_field_hiring_type"
+                                    style="color: green;" attrs="{'invisible': [('hiring_type_exists', '!=', True)]}" />
+                                <field name="hiring_type" class="oe_field_hiring_type"
+                                    style="color: red;" attrs="{'invisible': [('hiring_type_exists', '=', True)]}" />
+                                <field name="employment_group" class="oe_field_employment_group" />
+                                <field name="public_corps" class="oe_field_public_corps" />
+                            </group>
+
+                            <group col="2" colspan="2" string="Exam">
+                                <field name="access_system" class="oe_field_access_system"
+                                    style="color: green;" attrs="{'invisible': [('access_system_exists', '!=', True)]}" />
+                                <field name="access_system" class="oe_field_access_system"
+                                    style="color: red;" attrs="{'invisible': [('access_system_exists', '=', True)]}" />
+                                <field name="vacancy_type" class="oe_field_vacancy_type" />
+                                <separator colspan="2" />
+                            </group>
+                        </group>
+
+                        <group col="2" string="Internet">
+                            <field name="publication_bulletin" colspan="4"
+                                class="oe_field_publication_bulletin text-truncate" />
+                            <field name="official_journal_url" colspan="4" widget="url"
+                                class="oe_field_official_journal_url text-truncate" />
+                            <field name="bulletin_board_url" colspan="4" widget="url"
+                                class="oe_field_bulletin_board_url text-truncate" />
+                        </group>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search view for "academy.public.tendering.gob.item" -->
+        <record id="view_academy_public_tendering_gob_item_search" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.gob.item.search</field>
+            <field name="model">academy.public.tendering.gob.item</field>
+            <field name="type">search</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="arch" type="xml">
+                <search string="academy_public_tendering_bulletin_data_search">
+                    <field name="code" />
+
+                    <field name="scope" />
+                    <field name="geografic_field" />
+                    <field name="administration" />
+                    <field name="administration_unit" />
+
+                    <field name="publication_bulletin" />
+                    <field name="publication_date" />
+                    <field name="term" />
+
+                    <field name="hiring_type" />
+                    <field name="employment_group" />
+                    <field name="public_corps" />
+
+                    <field name="access_system" />
+
+                    <separator  />
+
+                    <filter string="Disabled"
+                        name="disabled"
+                        domain="[('disabled', '>', 0)]"
+                        help="It has vacancies for disabled" />
+
+                    <separator  />
+
+                    <filter string="With process"
+                        name="process"
+                        domain="[('process_ids', '&lt;&gt;', False)]"
+                        help="Has an associated selective process" />
+
+                    <filter string="Without process"
+                        name="process"
+                        domain="[('process_ids', '=', False)]"
+                        help="Has no associated selective process" />
+
+                    <separator  />
+                    <filter string="Current Week"
+                        name="current_week"
+                        domain="[('create_date', '&lt;=', ((context_today()+relativedelta(weeks=0, weekday=-1)).strftime('%Y-%m-%d'))), ('create_date', '&gt;=', ((context_today()-relativedelta(weeks=1, weekday=0)).strftime('%Y-%m-%d')))]" />
+
+                    <filter string="Archived"
+                        name="disabled"
+                        domain="[('active', '&lt;&gt;', True)]"
+                        help="It has vacancies for disabled" />
+
+                </search>
+            </field>
+        </record>
+
+        <!-- Main window action for model.name -->
+        <record id="action_goblocal_items_act_window" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">Spanish govern</field>
+            <field name="res_model">academy.public.tendering.gob.item</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="search_view_id" ref="view_academy_public_tendering_gob_item_search" />
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add new spanish govern feed items
+                </p><p>
+                    There is not spanish govern feed items
+                </p>
+            </field>
+        </record>
+
+        <!-- Main menu for model.name -->
+        <record id="menu_goblocal_items" model="ir.ui.menu" >
+            <field name="name">Spanish govern</field>
+            <field name="sequence" eval="10" />
+            <field name="action" ref="action_goblocal_items_act_window" />
+            <field name="parent_id" ref="academy_public_tendering_rss.academy_public_tendering_rss" />
+        </record>
+
+    </data>
+</openerp>

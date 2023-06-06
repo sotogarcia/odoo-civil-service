@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <record id="academy_public_tendering_rss_feed_boppo" model="academy.public.tendering.rss.feed">
+            <field name="name">BOPPO</field>
+            <field name="source"><![CDATA[https://boppo.depo.gal/detalle/-/boppo/]]></field>
+            <field name="reader">_boppo_reader</field>
+            <field name="options">{}</field>
+            <field name="official" eval="1" />
+        </record>
+
+    </data>
+</openerp>

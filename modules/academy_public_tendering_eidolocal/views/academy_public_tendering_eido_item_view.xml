@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <!-- VIEWS: "Eidolocal items"
+
+            - Model·········: academy.public.tendering.eido.item
+            - _rec_name·····: id
+            - Domain········: []
+            - Context·······: {}
+            - Parent menu ··: academy_public_tendering_rss.academy_public_tendering_rss
+            - View priority·: 16    Sequence····: 10
+            - Action help···: There is not Eidolocal feed items
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <!-- Tree view for "academy.public.tendering.eido.item" -->
+        <record id="view_academy_public_tendering_eido_item_tree" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.eido.item.tree</field>
+            <field name="model">academy.public.tendering.eido.item</field>
+            <field name="type">tree</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_tree" />
+            <field name="arch" type="xml">
+                 <xpath expr="//field[@name='name']" position="after">
+                    <field name="city" class="oe_field_city" />
+                    <field name="state" class="oe_field_state" />
+                    <field name="status" class="oe_field_status" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Form view for "academy.public.tendering.eido.item" -->
+        <record id="view_academy_public_tendering_eido_item_form" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.eido.item.form</field>
+            <field name="model">academy.public.tendering.eido.item</field>
+            <field name="type">form</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='description']" position="after">
+                    <separator colspan="4" />
+                    <field name="state" class="oe_field_state" />
+                    <field name="city" class="oe_field_city" />
+                    <field name="status" class="oe_field_status" />
+                    <field name="journal" class="oe_field_journal" />
+                    <field name="job" class="oe_field_job" />
+                    <field name="term" class="oe_field_term" />
+                    <field name="hiring" class="oe_field_hiring" />
+                    <field name="vacancies" class="oe_field_vacancies" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Search view for "academy.public.tendering.eido.item" -->
+        <record id="view_academy_public_tendering_eido_item_search" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.eido.item.search</field>
+            <field name="model">academy.public.tendering.eido.item</field>
+            <field name="type">search</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_search" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='published']" position="after">
+                    <field name="state" />
+                    <field name="city" />
+                    <field name="job" />
+                    <field name="hiring" />
+                    <field name="status" />
+                    <field name="journal" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Main window action for model.name -->
+        <record id="action_eidolocal_items_act_window" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">Eidolocal items</field>
+            <field name="res_model">academy.public.tendering.eido.item</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="search_view_id" ref="view_academy_public_tendering_eido_item_search" />
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add new Eidolocal items
+                </p><p>
+                    There is not Eidolocal feed items
+                </p>
+            </field>
+        </record>
+
+        <!-- Main menu for model.name -->
+        <record id="menu_eidolocal_items" model="ir.ui.menu" >
+            <field name="name">Eidolocal items</field>
+            <field name="sequence" eval="10" />
+            <field name="action" ref="action_eidolocal_items_act_window" />
+            <field name="parent_id" ref="academy_public_tendering_rss.academy_public_tendering_rss" />
+        </record>
+
+    </data>
+</openerp>

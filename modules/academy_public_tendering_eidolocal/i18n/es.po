@@ -1,0 +1,333 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* academy_public_tendering_eidolocal
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-06 11:56+0000\n"
+"PO-Revision-Date: 2022-10-06 14:57+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model,name:academy_public_tendering_eidolocal.model_academy_public_tendering_rss_feed
+msgid "Academy public tendering RSS feed"
+msgstr "Fuente RSS de Licitaciones Públicas"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model,name:academy_public_tendering_eidolocal.model_academy_public_tendering_eido_item
+msgid "Academy public tendering eido item"
+msgstr "Artículo de oposición de Eidolocal"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__description
+msgid "Additional information in the RSS element"
+msgstr "Información adicional en el elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__body
+msgid "Body"
+msgstr "Cuerpo"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__active
+msgid "Check it to show this attempt or uncheck to archivate"
+msgstr "Marcar para mostrar este elemento o desmarcar para archivar"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__official
+msgid "Checked if the feed corresponds to an official journal"
+msgstr "Marcar si la fuente corresponde a un diario oficial"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__city
+msgid "City"
+msgstr "Ciudad"
+
+#. module: academy_public_tendering_eidolocal
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_eidolocal.action_eidolocal_items_act_window
+msgid "Click to add new Eidolocal items"
+msgstr "Clic para agregar nuevos elementos de Eidolocal"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__published
+msgid "Date and time it was published"
+msgstr "Fecha y hora en que se publicó"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: academy_public_tendering_eidolocal
+#: model:academy.public.tendering.rss.feed,name:academy_public_tendering_eidolocal.academy_public_tendering_eido_feed
+msgid "Eidolocal"
+msgstr "Eidolocal"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.actions.act_window,name:academy_public_tendering_eidolocal.action_eidolocal_items_act_window
+#: model:ir.ui.menu,name:academy_public_tendering_eidolocal.menu_eidolocal_items
+msgid "Eidolocal items"
+msgstr "Elementos de Eidolocal"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_count
+msgid "Event count"
+msgstr "Recuento de eventos"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_ids
+msgid "Events"
+msgstr "Eventos"
+
+#. module: academy_public_tendering_eidolocal
+#: code:addons/academy_public_tendering_eidolocal/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "Fail to download eidolocal.gal CSV file. System says: {}"
+msgstr "Error al descargar el archivo CSV de eidolocal.gal. El sistema dice: {}"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__guid
+msgid "GUID"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__guid
+msgid "GUID in the RSS element"
+msgstr "GUID en el elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__body
+msgid "HTML"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__guid_hash
+msgid "Hash"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__guid_hash
+msgid "Hash to allow to check if item already exists"
+msgstr "Hash para permitir verificar si el artículo ya existe"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__hiring
+msgid "Hiring type"
+msgstr "Tipo de contratación"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__id
+msgid "ID"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__official
+msgid "Is official"
+msgstr "Es oficial"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__job
+msgid "Job"
+msgstr "Trabajo"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__link
+msgid "Link"
+msgstr "Enlace"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_ids
+msgid "List all events related with this RSS item"
+msgstr "Listar todos los eventos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_ids
+msgid "List all offers related with this RSS item"
+msgstr "Listar todas las ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__process_ids
+msgid "List all processes related with this RSS item"
+msgstr "Listar todos los procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_count
+msgid "Number of events related with this RSS item"
+msgstr "Número de eventos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_count
+msgid "Number of offers related with this RSS item"
+msgstr "Número de ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__process_count
+msgid "Number of processes related with this RSS item"
+msgstr "Número de procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:academy.public.tendering.rss.feed,description:academy_public_tendering_eidolocal.academy_public_tendering_eido_feed
+msgid "Ofertas de empleo"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_count
+msgid "Offer count"
+msgstr "Recuento de ofertas"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_ids
+msgid "Offers"
+msgstr "Ofertas"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__feed_id
+msgid "Parent RSS feed"
+msgstr "Fuente RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:academy.public.tendering.rss.feed,title:academy_public_tendering_eidolocal.academy_public_tendering_eido_feed
+msgid "Portal de la administración local de Galicia"
+msgstr ""
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__process_ids
+msgid "Process"
+msgstr "Proceso"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__process_count
+msgid "Process count"
+msgstr "Recuento de procesos"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__safe_date
+msgid "Publish date if available or create date"
+msgstr "Fecha de publicación si está disponible o fecha de creación"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__published
+msgid "Published"
+msgstr "Publicada"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__feed_id
+msgid "RSS feed"
+msgstr "Fuente RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: code:addons/academy_public_tendering_eidolocal/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "RSS feed {} updated. Published: {}, consulted: {}"
+msgstr "Fuente RSS {} actualizada. Publicada: {}, consultada: {}"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__item_id
+msgid "RSS item"
+msgstr "Elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__name
+msgid "RSS item title"
+msgstr "Título del elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: code:addons/academy_public_tendering_eidolocal/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "Response status code: {}"
+msgstr "Código de estado de la respuesta: {}"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__safe_date
+msgid "Safe date"
+msgstr "Fecha segura"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__state
+msgid "State"
+msgstr "Estado"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__status
+msgid "Status"
+msgstr "Estado"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__term
+msgid "Term"
+msgstr "Plazo"
+
+#. module: academy_public_tendering_eidolocal
+#: code:addons/academy_public_tendering_eidolocal/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "The eidolocal.gal CSV file has been downloaded"
+msgstr "El archivo CSV de eidolocal.gal ha sido descargado"
+
+#. module: academy_public_tendering_eidolocal
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_eidolocal.action_eidolocal_items_act_window
+msgid "There is not Eidolocal feed items"
+msgstr "No hay elementos de la fuente Eidolocal"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__name
+msgid "Title"
+msgstr "Título"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__link
+msgid "URL referenced in the RSS element"
+msgstr "URL referida en el elemento RSS"
+
+#. module: academy_public_tendering_eidolocal
+#: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__vacancies
+msgid "Vacancies"
+msgstr "Vacantes"

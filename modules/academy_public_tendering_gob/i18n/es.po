@@ -1,0 +1,520 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* academy_public_tendering_gob
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-06 11:55+0000\n"
+"PO-Revision-Date: 2022-10-06 15:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "<span>Edit process</span>"
+msgstr "<span>Editar proceso</span>"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "<span>New process</span>"
+msgstr "<span>Nuevo proceso</span>"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model,name:academy_public_tendering_gob.model_academy_public_tendering_rss_feed
+msgid "Academy public tendering RSS feed"
+msgstr "Fuente RSS de Licitaciones Públicas"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model,name:academy_public_tendering_gob.model_academy_public_tendering_gob_item
+msgid "Academy public tendering gob item"
+msgstr "Artículos de oposiciones del buscador del estado"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__access_system
+msgid "Access System"
+msgstr "Sistema de acceso"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__access_system_exists
+msgid "Access system exists"
+msgstr "El sistema de acceso existe"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__description
+msgid "Additional information in the RSS element"
+msgstr "Información adicional en el elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:academy.public.tendering.rss.feed,name:academy_public_tendering_gob.academy_public_tendering_gob_feed
+msgid "Administracion.gob.es"
+msgstr "Administracion.gob.es"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__administration
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "Administration"
+msgstr "Administration"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__administration_unit
+msgid "Administration Unit"
+msgstr "Unidad adminitrativa"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__administration_exists
+msgid "Administration exists"
+msgstr "La administración existe"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__announced
+msgid "Announced"
+msgstr "Anunciada"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__body
+msgid "Body"
+msgstr "Cuerpo"
+
+#. module: academy_public_tendering_gob
+#: model:academy.public.tendering.rss.feed,description:academy_public_tendering_gob.academy_public_tendering_gob_feed
+msgid "Boletín de empleo público"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__bulletin_board_url
+msgid "Bulletin URL"
+msgstr "URL del boletín"
+
+#. module: academy_public_tendering_gob
+#: model:academy.public.tendering.rss.feed,title:academy_public_tendering_gob.academy_public_tendering_gob_feed
+msgid "Buscador de convocatorias de empleo público"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__official
+msgid "Checked if the feed corresponds to an official journal"
+msgstr "Marcar si la fuente corresponde a un diario oficial"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_gob.action_goblocal_items_act_window
+msgid "Click to add new spanish govern feed items"
+msgstr "Clic para agregar nuevos elementos del buscador del estado"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__code
+msgid "Code"
+msgstr "Código"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__comment
+msgid "Comment"
+msgstr "Comentario"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__public_corps
+msgid "Corps"
+msgstr "Cuerpo"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Current Week"
+msgstr "Semana actual"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__publication_date
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__published
+msgid "Date and time it was published"
+msgstr "Fecha y hora en que se publicó"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "Details"
+msgstr "Detalles"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__disabled
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Disabled"
+msgstr "Desactivada"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__employment_group
+msgid "Employment group"
+msgstr "Grupo de empleo"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_count
+msgid "Event count"
+msgstr "Recuento de eventos"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_ids
+msgid "Events"
+msgstr "Eventos"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "Exam"
+msgstr "Examen"
+
+#. module: academy_public_tendering_gob
+#: code:addons/academy_public_tendering_gob/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "Excel file downloaded via {}. It has {} records."
+msgstr "Archivo de Excel descargado a través de {}. Tiene {} registros."
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__guid
+msgid "GUID"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__code
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__guid
+msgid "GUID in the RSS element"
+msgstr "GUID en el elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__geografic_field
+msgid "Geografic field"
+msgstr "Ámbito geográfico"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__body
+msgid "HTML"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Has an associated selective process"
+msgstr "Tiene un proceso selectivo asociado"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Has no associated selective process"
+msgstr "No tiene proceso selectivo asociado"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__guid_hash
+msgid "Hash"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__guid_hash
+msgid "Hash to allow to check if item already exists"
+msgstr "Hash para permitir verificar si el artículo ya existe"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__hiring_type
+msgid "Hiring type"
+msgstr "Tipo de contratación"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__hiring_type_exists
+msgid "Hiring type exists"
+msgstr "El tipo de contratación existe"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__id
+msgid "ID"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__source_id
+msgid "ID field value gotten from downloaded Excel file"
+msgstr "Valor del campo de ID obtenido del archivo de Excel descargado"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__source_id
+msgid "ID from source"
+msgstr "ID de la fuente"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__active
+msgid ""
+"If the active field is set to false, it will allow you to hide record "
+"without removing it."
+msgstr ""
+"Si el este campo se establece en Falso, le permitirá ocultar el "
+"registro sin eliminarlo."
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__internal
+msgid "Internal"
+msgstr "Interna"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "Internet"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__official
+msgid "Is official"
+msgstr "Es oficial"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "It has vacancies for disabled"
+msgstr "Tiene plazas para discapacitados"
+
+#. module: academy_public_tendering_gob
+#: code:addons/academy_public_tendering_gob/models/academy_public_tendering_gob_item.py:0
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__official_journal_url
+msgid "Journal URL"
+msgstr "URL del diario"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__link
+msgid "Link"
+msgstr "Enlace"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_ids
+msgid "List all events related with this RSS item"
+msgstr "Listar todos los eventos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_ids
+msgid "List all offers related with this RSS item"
+msgstr "Listar todas las ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__process_ids
+msgid "List all processes related with this RSS item"
+msgstr "Listar todos los procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_count
+msgid "Number of events related with this RSS item"
+msgstr "Number of events related with this RSS item"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_count
+msgid "Number of offers related with this RSS item"
+msgstr "Número de ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__process_count
+msgid "Number of processes related with this RSS item"
+msgstr "Número de procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_count
+msgid "Offer count"
+msgstr "Recuento de ofertas"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_ids
+msgid "Offers"
+msgstr "Ofertas"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__feed_id
+msgid "Parent RSS feed"
+msgstr "Fuente RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__process_ids
+msgid "Process"
+msgstr "Proceso"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__process_count
+msgid "Process count"
+msgstr "Recuento de procesos"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__publication_date
+msgid "Publication"
+msgstr "Publicación"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__publication_bulletin
+msgid "Publication bulletin"
+msgstr "Boletín de publicación"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__safe_date
+msgid "Publish date if available or create date"
+msgstr "Fecha de publicación si está disponible o fecha de creación"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__published
+msgid "Published"
+msgstr "Publicada"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__feed_id
+msgid "RSS feed"
+msgstr "Fuente RSS"
+
+#. module: academy_public_tendering_gob
+#: code:addons/academy_public_tendering_gob/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "RSS feed {} updated. Published: {}, consulted: {}"
+msgstr "Fuente RSS {} actualizada. Publicada: {}, consultada: {}"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__item_id
+msgid "RSS item"
+msgstr "Elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__name
+msgid "RSS item title"
+msgstr "Título del elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__safe_date
+msgid "Safe date"
+msgstr "Fecha segura"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__scope
+msgid "Scope"
+msgstr "Ámbito"
+
+#. module: academy_public_tendering_gob
+#: model:ir.actions.act_window,name:academy_public_tendering_gob.action_goblocal_items_act_window
+#: model:ir.ui.menu,name:academy_public_tendering_gob.menu_goblocal_items
+msgid "Spanish govern"
+msgstr "Gobierno de España"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__term
+msgid "Term"
+msgstr "Plazo"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__term_comment
+msgid "Term description"
+msgstr "Descripción del término"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_gob.action_goblocal_items_act_window
+msgid "There is not spanish govern feed items"
+msgstr "No hay elementos de la fuente RSS del gobierno de España"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__name
+msgid "Title"
+msgstr "Título"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__link
+#: model:ir.model.fields,help:academy_public_tendering_gob.field_academy_public_tendering_gob_item__official_journal_url
+msgid "URL referenced in the RSS element"
+msgstr "URL referenciada en el elemento RSS"
+
+#. module: academy_public_tendering_gob
+#: code:addons/academy_public_tendering_gob/models/academy_public_tendering_gob_item.py:0
+#, python-format
+msgid "Unnamed"
+msgstr "Sin nombre"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__unoccupied
+msgid "Unoccupied"
+msgstr "Desocupada"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "Vacancy"
+msgstr "Vacante"
+
+#. module: academy_public_tendering_gob
+#: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__vacancy_type
+msgid "Vacancy type"
+msgstr "Tipo de vacante"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "With process"
+msgstr "Con proceso"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "Without process"
+msgstr "Sin proceso"
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_form
+msgid "academy_public_tendering_bulletin_data_form"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_search
+msgid "academy_public_tendering_bulletin_data_search"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model_terms:ir.ui.view,arch_db:academy_public_tendering_gob.view_academy_public_tendering_gob_item_tree
+msgid "academy_public_tendering_bulletin_data_tree"
+msgstr ""
+
+#. module: academy_public_tendering_gob
+#: model:academy.public.tendering.rss.feed,options:academy_public_tendering_gob.academy_public_tendering_gob_feed
+msgid ""
+"{'entry_url': 'https://administracion.gob.es/pagFront/empleoBecas/"
+"empleo/buscadorEmpleo.htm'}"
+msgstr ""

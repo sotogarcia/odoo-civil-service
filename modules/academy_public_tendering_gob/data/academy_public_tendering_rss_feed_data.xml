@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <record id="academy_public_tendering_gob_feed" model="academy.public.tendering.rss.feed">
+            <field name="name">Administracion.gob.es</field>
+            <!-- Source will be ignored, because this specific implementation needs serveral links -->
+            <field name="source"><![CDATA[https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleoAvanzado.htm]]></field>
+            <field name="reader" />
+            <field name="official" eval="0" />
+            <field name="options">{'entry_url': 'https://administracion.gob.es/pagFront/empleoBecas/empleo/buscadorEmpleo.htm'}</field>
+        </record>
+
+    </data>
+</openerp>

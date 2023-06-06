@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <record id="academy_public_tendering_eido_feed" model="academy.public.tendering.rss.feed">
+            <field name="name">Eidolocal</field>
+            <field name="source"><![CDATA[https://www.eidolocal.gal/delegate/controladorGuia/]]></field>
+            <field name="reader" />
+            <field name="official" eval="0" />
+        </record>
+
+    </data>
+</openerp>

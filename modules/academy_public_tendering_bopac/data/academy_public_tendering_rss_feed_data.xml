@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <record id="academy_public_tendering_rss_feed_bopac" model="academy.public.tendering.rss.feed">
+            <field name="name">BOPAC</field>
+            <field name="source"><![CDATA[https://bop.dicoruna.es/bopportal/]]></field>
+            <field name="reader">_bopac_reader</field>
+            <field name="options">{'summary_page': '/bopportal/cambioBoletin.do', 'entry_page': '/bopportal/publicado/'}</field>
+            <field name="official" eval="1" />
+        </record>
+
+    </data>
+</openerp>

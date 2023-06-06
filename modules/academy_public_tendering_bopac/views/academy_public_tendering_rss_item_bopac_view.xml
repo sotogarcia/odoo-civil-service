@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <!-- VIEWS: "Bopac daily entries"
+
+            - Model·········: academy.public.tendering.rss.bopac.item
+            - _rec_name·····: id
+            - Domain········: []
+            - Context·······: {}
+            - Parent menu ··: academy_public_tendering_rss.academy_public_tendering_rss
+            - View priority·: 16    Sequence····: 10
+            - Action help···: There is not Bopac entries
+        - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+        <!-- Tree view for "academy.public.tendering.rss.bopac.item" -->
+        <record id="view_academy_public_tendering_rss_bopac_item_tree" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.rss.bopac.item.tree</field>
+            <field name="model">academy.public.tendering.rss.bopac.item</field>
+            <field name="type">tree</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_tree" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="administration" class="oe_field_administration" />
+                    <field name="administration_unit" class="oe_field_administration_unit" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Form view for "academy.public.tendering.rss.bopac.item" -->
+        <record id="view_academy_public_tendering_rss_bopac_item_form" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.rss.bopac.item.form</field>
+            <field name="model">academy.public.tendering.rss.bopac.item</field>
+            <field name="type">form</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='description']" position="after">
+                    <separator colspan="4" />
+                    <field name="summary" class="oe_field_summary" />
+                    <field name="organization" class="oe_field_organization" />
+                    <field name="administration" class="oe_field_administration" />
+                    <field name="administration_unit" class="oe_field_administration_unit" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Search view for "academy.public.tendering.rss.bopac.item" -->
+        <record id="view_academy_public_tendering_rss_bopac_item_search" model="ir.ui.view">
+            <field name="name">view.academy.public.tendering.rss.bopac.item.search</field>
+            <field name="model">academy.public.tendering.rss.bopac.item</field>
+            <field name="type">search</field>
+            <field name="mode">primary</field>
+            <field name="priority" eval="16" />
+            <field name="active" eval="True" />
+            <field name="inherit_id" ref="academy_public_tendering_rss.view_academy_public_tendering_rss_item_search" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='published']" position="after">
+                    <field name="organization" />
+                    <field name="administration" />
+                    <field name="administration_unit" />
+                </xpath>
+            </field>
+        </record>
+
+        <!-- Main window action for model.name -->
+        <record id="action_bopac_daily_entries_act_window" model="ir.actions.act_window">
+            <field name="type">ir.actions.act_window</field>
+            <field name="name">Bopac daily entries</field>
+            <field name="res_model">academy.public.tendering.rss.bopac.item</field>
+            <field name="view_mode">tree,form</field>
+            <field name="target">current</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="search_view_id" ref="view_academy_public_tendering_rss_bopac_item_search" />
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to add new Bopac daily entries
+                </p><p>
+                    There is not Bopac entries
+                </p>
+            </field>
+        </record>
+
+        <!-- Main menu for model.name -->
+        <record id="menu_bopac_daily_entries" model="ir.ui.menu" >
+            <field name="name">Bopac daily entries</field>
+            <field name="sequence" eval="10" />
+            <field name="action" ref="action_bopac_daily_entries_act_window" />
+            <field name="parent_id" ref="academy_public_tendering_rss.academy_public_tendering_rss" />
+        </record>
+
+    </data>
+</openerp>

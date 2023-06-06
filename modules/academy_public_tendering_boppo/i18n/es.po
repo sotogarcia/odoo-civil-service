@@ -1,0 +1,319 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* academy_public_tendering_boppo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-06 11:57+0000\n"
+"PO-Revision-Date: 2022-10-06 14:49+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model,name:academy_public_tendering_boppo.model_academy_public_tendering_rss_feed
+msgid "Academy public tendering RSS feed"
+msgstr "Fuente RSS de Licitaciones Públicas"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model,name:academy_public_tendering_boppo.model_academy_public_tendering_rss_boppo_item
+msgid "Academy public tendering rss item BOPPO"
+msgstr "Oposición Elemento RSS del BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__description
+msgid "Additional information in the RSS element"
+msgstr "Información adicional en el elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__administration
+msgid "Administration"
+msgstr "Administración"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__administration_unit
+msgid "Administration Unit"
+msgstr "Unidad administrativa"
+
+#. module: academy_public_tendering_boppo
+#: model:academy.public.tendering.rss.feed,name:academy_public_tendering_boppo.academy_public_tendering_rss_feed_boppo
+msgid "BOPPO"
+msgstr "BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.actions.act_window,name:academy_public_tendering_boppo.action_boppo_daily_entries_act_window
+#: model:ir.ui.menu,name:academy_public_tendering_boppo.menu_boppo_daily_entries
+msgid "BOPPO daily entries"
+msgstr "Entrada diaria del BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__body
+msgid "Body"
+msgstr "Cuerpo"
+
+#. module: academy_public_tendering_boppo
+#: model:academy.public.tendering.rss.feed,title:academy_public_tendering_boppo.academy_public_tendering_rss_feed_boppo
+msgid "Boletín oficial de la provincia de Pontevedra"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:academy.public.tendering.rss.feed,description:academy_public_tendering_boppo.academy_public_tendering_rss_feed_boppo
+msgid "Boletín provincial"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__active
+msgid "Check it to show this attempt or uncheck to archivate"
+msgstr "Marcar para mostrar este elemento o desmarcar para archivar"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__official
+msgid "Checked if the feed corresponds to an official journal"
+msgstr "Marcar si la fuente corresponde a un diario oficial"
+
+#. module: academy_public_tendering_boppo
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_boppo.action_boppo_daily_entries_act_window
+msgid "Click to add new BOPPO daily entries"
+msgstr "Clic para agregar nuevas entradas diarias de BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__published
+msgid "Date and time it was published"
+msgstr "Fecha y hora en la que se publicó"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__event_count
+msgid "Event count"
+msgstr "Recuento de eventos"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__event_ids
+msgid "Events"
+msgstr "Eventos"
+
+#. module: academy_public_tendering_boppo
+#: code:addons/academy_public_tendering_boppo/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "Fail to read BOOPO entry «{}»"
+msgstr "Error al leer la entrada del BOPPO «{}»"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__guid
+msgid "GUID"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__guid
+msgid "GUID in the RSS element"
+msgstr "GUID en el elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__body
+msgid "HTML"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__guid_hash
+msgid "Hash"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__guid_hash
+msgid "Hash to allow to check if item already exists"
+msgstr "Hash que permite verificar si el elemento ya existe"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__id
+msgid "ID"
+msgstr ""
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__official
+msgid "Is official"
+msgstr "Es oficial"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__link
+msgid "Link"
+msgstr "Enlace"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__event_ids
+msgid "List all events related with this RSS item"
+msgstr "Listar todos los eventos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__offer_ids
+msgid "List all offers related with this RSS item"
+msgstr "Listar todas las ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__process_ids
+msgid "List all processes related with this RSS item"
+msgstr "Listar todos los procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: code:addons/academy_public_tendering_boppo/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "NO entries were found in the BOPPO daily summary"
+msgstr "NO se encontraron entradas en el resumen diario de BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: code:addons/academy_public_tendering_boppo/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "New BOOPO entry with name {}"
+msgstr "Nueva entrada del BOPPO con nombre {}"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__event_count
+msgid "Number of events related with this RSS item"
+msgstr "Número de eventos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__offer_count
+msgid "Number of offers related with this RSS item"
+msgstr "Número de ofertas relacionadas con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__process_count
+msgid "Number of processes related with this RSS item"
+msgstr "Número de procesos relacionados con este elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__offer_count
+msgid "Offer count"
+msgstr "Recuento de ofertas"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__offer_ids
+msgid "Offers"
+msgstr "Ofertas"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__organization
+msgid "Organization"
+msgstr "Organización"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__feed_id
+msgid "Parent RSS feed"
+msgstr "Fuente RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__process_ids
+msgid "Process"
+msgstr "Proceso"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__process_count
+msgid "Process count"
+msgstr "Recuento de procesos"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__safe_date
+msgid "Publish date if available or create date"
+msgstr "Fecha de publicación si está disponible o fecha de creación"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__published
+msgid "Published"
+msgstr "Publicada"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__item_id
+msgid "RSS Item"
+msgstr "Elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__feed_id
+msgid "RSS feed"
+msgstr "RSS Feed"
+
+#. module: academy_public_tendering_boppo
+#: code:addons/academy_public_tendering_boppo/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "RSS feed {} updated. Published: {}, consulted: {}"
+msgstr "Fuente RSS {} actualizada. Publicada: {}, consultada: {}"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__name
+msgid "RSS item title"
+msgstr "Título del elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__safe_date
+msgid "Safe date"
+msgstr "Fecha segura"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__summary
+msgid "Summary"
+msgstr "Resumen"
+
+#. module: academy_public_tendering_boppo
+#: model_terms:ir.actions.act_window,help:academy_public_tendering_boppo.action_boppo_daily_entries_act_window
+msgid "There is not BOPPO entries"
+msgstr "No hay entradas del BOPPO"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,field_description:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__name
+msgid "Title"
+msgstr "Título"
+
+#. module: academy_public_tendering_boppo
+#: model:ir.model.fields,help:academy_public_tendering_boppo.field_academy_public_tendering_rss_boppo_item__link
+msgid "URL referenced in the RSS element"
+msgstr "URL referida en el elemento RSS"
+
+#. module: academy_public_tendering_boppo
+#: code:addons/academy_public_tendering_boppo/models/academy_public_tendering_rss_feed.py:0
+#, python-format
+msgid "{} entries were found in the BOPPO daily summary"
+msgstr "Se encontraron {} entradas en el resumen diario de BOPPO"
