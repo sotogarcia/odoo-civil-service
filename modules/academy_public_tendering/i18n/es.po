@@ -1828,7 +1828,7 @@ msgstr "Calle 2"
 #. module: academy_public_tendering
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_administration__student_id
 msgid "Student"
-msgstr "Alumno"
+msgstr "Estudiante"
 
 #. module: academy_public_tendering
 #: model_terms:ir.ui.view,arch_db:academy_public_tendering.view_academy_public_tendering_public_administration_kanban

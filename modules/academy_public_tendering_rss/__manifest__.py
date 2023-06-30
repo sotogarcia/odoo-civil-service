@@ -17,7 +17,10 @@
     'version': '13.0.1.0.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['academy_public_tendering'],
+    'depends': [
+        'academy_public_tendering',
+        'base_field_big_int'
+    ],
 
     # always loaded
     'data': [
