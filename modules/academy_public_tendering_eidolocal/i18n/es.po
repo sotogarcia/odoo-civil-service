@@ -101,7 +101,7 @@ msgstr "Elementos de Eidolocal"
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_count
 msgid "Event count"
-msgstr "Recuento de eventos"
+msgstr "Nº de eventos"
 
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__event_ids
@@ -222,7 +222,7 @@ msgstr ""
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_count
 msgid "Offer count"
-msgstr "Recuento de ofertas"
+msgstr "Nº de ofertas"
 
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__offer_ids
@@ -247,7 +247,7 @@ msgstr "Proceso"
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,field_description:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__process_count
 msgid "Process count"
-msgstr "Recuento de procesos"
+msgstr "Nº de procesos"
 
 #. module: academy_public_tendering_eidolocal
 #: model:ir.model.fields,help:academy_public_tendering_eidolocal.field_academy_public_tendering_eido_item__safe_date

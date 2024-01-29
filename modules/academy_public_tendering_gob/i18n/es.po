@@ -184,7 +184,7 @@ msgstr "Grupo de empleo"
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_count
 msgid "Event count"
-msgstr "Recuento de eventos"
+msgstr "Nº de eventos"
 
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__event_ids
@@ -361,7 +361,7 @@ msgstr "Número de procesos relacionados con este elemento RSS"
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_count
 msgid "Offer count"
-msgstr "Recuento de ofertas"
+msgstr "Nº de ofertas"
 
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__offer_ids
@@ -381,7 +381,7 @@ msgstr "Proceso"
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__process_count
 msgid "Process count"
-msgstr "Recuento de procesos"
+msgstr "Nº de procesos"
 
 #. module: academy_public_tendering_gob
 #: model:ir.model.fields,field_description:academy_public_tendering_gob.field_academy_public_tendering_gob_item__publication_date

@@ -91,7 +91,7 @@ msgstr "Archivado"
 #. module: academy_public_tendering_rss
 #: model:ir.model.fields,field_description:academy_public_tendering_rss.field_academy_public_tendering_rss_feed__message_attachment_count
 msgid "Attachment Count"
-msgstr "Recuento de adjuntos"
+msgstr "Nº de adjuntos"
 
 #. module: academy_public_tendering_rss
 #: model:academy.public.tendering.rss.feed,name:academy_public_tendering_rss.academy_public_tendering_rss_feed_madrid_city

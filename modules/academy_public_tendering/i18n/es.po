@@ -166,7 +166,7 @@ msgstr "Activo"
 #. module: academy_public_tendering
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_administration__active_lang_count
 msgid "Active Lang Count"
-msgstr "Recuento de idiomas activos"
+msgstr "Nº de idiomas activos"
 
 #. module: academy_public_tendering
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_administration__activity_ids
@@ -268,7 +268,7 @@ msgstr "Adjunto"
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_administration__message_attachment_count
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_offer__message_attachment_count
 msgid "Attachment Count"
-msgstr "Recuento de adjuntos"
+msgstr "Nº de adjuntos"
 
 #. module: academy_public_tendering
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_process__ir_attachment_ids
