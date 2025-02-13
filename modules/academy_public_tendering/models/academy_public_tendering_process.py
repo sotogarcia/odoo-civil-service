@@ -28,7 +28,7 @@ class AptPublicTendering(models.Model):
     _inherit = [
         'image.mixin',
         'mail.thread',
-        'academy.abstract.owner'
+        'ownership.mixin'
     ]
 
     _rec_name = 'name'

@@ -21,7 +21,8 @@
     # any module necessary for this one to work correctly
     'depends': [
         'base',
-        'academy_base'
+        'academy_base',
+        'record_ownership'
     ],
 
     # always loaded

@@ -1173,7 +1173,7 @@ msgstr "Es alumno"
 
 #. module: academy_public_tendering
 #: model:ir.model.fields,field_description:academy_public_tendering.field_academy_public_tendering_public_administration__function
-msgid "Job Position"
+msgid "Occupation"
 msgstr "Puesto de trabajo"
 
 #. module: academy_public_tendering
