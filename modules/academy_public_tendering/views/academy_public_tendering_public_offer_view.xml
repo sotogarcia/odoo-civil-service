@@ -26,6 +26,7 @@
                 <tree string="academy_public_tendering_public_offer_tree" create="1" delete="1" edit="1">
                     <field name="name" />
                     <field name="public_administration_id" />
+                    <field name="call_year" class="oe_field_call_year" />
                     <field name="approval" class="oe_field_approval" />
                     <field name="total_of_processes" />
                     <field name="total_of_vacancies" />
@@ -44,6 +45,7 @@
             <field name="arch" type="xml">
                 <tree string="view_academy_public_tendering_public_offer_tree_x2many" create="1" delete="1" edit="1">
                     <field name="name" />
+                    <field name="call_year" class="oe_field_call_year" />
                     <field name="approval" class="oe_field_approval" />
                     <field name="total_of_processes" />
                     <field name="total_of_vacancies" />
@@ -94,12 +96,13 @@
                             </div>
                         </div>
 
-                        <group col="2">
+                        <group col="4">
                             <field name="public_administration_id" class="oe_field_administration_id" />
-                            <field name="bulletin_board_url" class="oe_field_bulletin_board_url" widget="url"  />
-                            <field name="official_journal_url" class="oe_field_official_journal_url" widget="url" />
-                            <field name="approval" class="oe_field_approval" />
                             <field name="total_of_vacancies" class="oe_field_total_of_vacancies" />
+                            <field name="call_year" class="oe_field_call_year" />
+                            <field name="approval" class="oe_field_approval" />
+                            <field name="bulletin_board_url" class="oe_field_bulletin_board_url" widget="url" colspan="4"  />
+                            <field name="official_journal_url" class="oe_field_official_journal_url" widget="url" colspan="4" />
                         </group>
 
                         <notebook>
@@ -109,9 +112,13 @@
                                     'tree_view_ref' : 'academy_public_tendering.view_academy_public_tendering_process_tree_x2many'}"
                                     />
                             </page>
-                            <page string="Description" class="oe_page_description" accesskey="D">
-                                <field name="description" class="oe_field_description"
-                                    placeholder="Enter new description" />
+                            <page id="setup" string="Setup" class="oe_page_setup" accesskey="S">
+                                <group col="4" string="Description">
+                                    <field name="description" class="oe_field_description" colspan="2" nolabel="1" />
+                                </group>
+                                <group col="4" string="Publish">
+                                    <field name="token" class="oe_field_token" />
+                                </group>
                             </page>
                         </notebook>
 

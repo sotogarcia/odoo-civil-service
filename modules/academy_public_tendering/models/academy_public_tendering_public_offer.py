@@ -6,8 +6,10 @@
 
 from odoo import models, fields, api
 from odoo.tools.safe_eval import safe_eval
-from logging import getLogger
 
+from logging import getLogger
+from uuid import uuid4
+from datetime import date
 
 _logger = getLogger(__name__)
 
@@ -60,6 +62,18 @@ class AcademyPublicTenderingOffer(models.Model):
         track_visibility='onchange'
     )
 
+    token = fields.Char(
+        string='Token',
+        required=True,
+        readonly=True,
+        index=True,
+        default=lambda self: str(uuid4()),
+        help='Unique token used to track this answer',
+        translate=False,
+        copy=False,
+        track_visibility='always'
+    )
+    
     public_administration_id = fields.Many2one(
         string='Administration',
         required=True,
@@ -142,6 +156,14 @@ class AcademyPublicTenderingOffer(models.Model):
         track_visibility='onchange',
     )
 
+    call_year = fields.Integer(
+        string='Call year',
+        required=True,
+        readonly=False,
+        index=True,
+        default=lambda self: date.today().year,
+        help='Calendar year associated with the record.'
+    )
 
     @api.depends('tendering_process_ids')
     def _compute_total_of_vacancies(self):
@@ -159,6 +181,13 @@ class AcademyPublicTenderingOffer(models.Model):
         for record in self:
             record.total_of_processes = len(record.tendering_process_ids)
 
+    _sql_constraints = [
+        (
+            'unique_token',
+            'UNIQUE(token)',
+            'The token must be unique.'
+        )
+    ]
 
     def update_approval(self):
         for record in self:

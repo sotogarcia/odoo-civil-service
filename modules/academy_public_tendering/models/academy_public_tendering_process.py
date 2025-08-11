@@ -10,8 +10,16 @@ from odoo.exceptions import AccessDenied
 
 from logging import getLogger
 from datetime import datetime, timedelta
+from uuid import uuid4
+from datetime import date
 
 _logger = getLogger(__name__)
+
+
+SI_XID = 'academy_public_tendering.attachment_category_structure_infographics'
+SL_XID = 'academy_public_tendering.attachment_category_syllabus_list'
+EI_XID = 'academy_public_tendering.attachment_category_exam_infographics'
+RR_XID = 'academy_public_tendering.attachment_category_results_reports'
 
 
 class AptPublicTendering(models.Model):
@@ -46,14 +54,13 @@ class AptPublicTendering(models.Model):
         track_visibility='always'
     )
 
-    description = fields.Text(
+    description = fields.Html(
         string='Description',
         required=False,
         readonly=False,
         index=False,
         default=None,
-        help='Something about this academy public tendering',
-        translate=True
+        help='Something about this public process'
     )
 
     active = fields.Boolean(
@@ -67,6 +74,18 @@ class AptPublicTendering(models.Model):
         track_visibility='onchange'
     )
 
+    token = fields.Char(
+        string='Token',
+        required=True,
+        readonly=True,
+        index=True,
+        default=lambda self: str(uuid4()),
+        help='Unique token used to track this answer',
+        translate=False,
+        copy=False,
+        track_visibility='always'
+    )
+    
     public_offer_id = fields.Many2one(
         string='Public offer',
         required=True,
@@ -319,6 +338,22 @@ class AptPublicTendering(models.Model):
         limit=None
     )
 
+    event_count = fields.Integer(
+        string='Event count',
+        required=True,
+        readonly=True,
+        index=False,
+        default=0,
+        help='Total number of process events',
+        compute='_compute_event_count'
+    )
+
+    @api.depends('public_process_event_ids')
+    def _compute_event_count(self):
+        for record in self:
+            record.event_count = len(record.public_process_event_ids)
+    
+
     last_event_id = fields.Many2one(
         string='Last event',
         required=False,
@@ -516,6 +551,16 @@ class AptPublicTendering(models.Model):
             else:
                 record.last_event_id = None
 
+    # ---------------------------- CONSTRAINTS --------------------------------
+
+    _sql_constraints = [
+        (
+            'unique_token',
+            'UNIQUE(token)',
+            'The token must be unique.'
+        )
+    ]
+
     # ------------------------- AUXILIARY  METHODS ----------------------------
 
     def _ensure_state_id(self):
@@ -617,3 +662,88 @@ class AptPublicTendering(models.Model):
             event_type_domain, order="sequence ASC")
 
         return event_type_set
+
+    salary_min = fields.Monetary(
+        string='Minimum Salary',
+        required=True,
+        readonly=False,
+        index=True,
+        default=0.0,
+        help='Minimum expected or planned salary'
+    )
+
+    salary_max = fields.Monetary(
+        string='Maximum Salary',
+        required=True,
+        readonly=False,
+        index=True,
+        default=0.0,
+        help='Maximum expected or planned salary'
+    )
+
+    currency_id = fields.Many2one(
+        string='Currency',
+        required=True,
+        readonly=False,
+        index=False,
+        default=lambda self: self.env.company.currency_id.id,
+        help='Currency used to display the forecast salary',
+        comodel_name='res.currency',
+        domain=[],
+        context={},
+        ondelete='cascade',
+        auto_join=False
+    )
+
+    access_requirements = fields.Html(
+        string='Access srequirements',
+        required=False,
+        readonly=False,
+        index=False,
+        default=None,
+        help='Minimum conditions to apply',
+        translate=True
+    )
+
+    exam_description = fields.Html(
+        string='Exam',
+        required=False,
+        readonly=False,
+        index=False,
+        default=None,
+        help='Detailed information about the exam',
+        translate=True
+    )
+
+    syllabus_details = fields.Html(
+        string='Syllabus',
+        required=False,
+        readonly=False,
+        index=False,
+        default=None,
+        help='Detailed breakdown of the syllabus or program',
+        translate=True
+    )
+  
+    job_description = fields.Html(
+        string='Job description',
+        required=False,
+        readonly=False,
+        index=False,
+        default=None,
+        help='Summary of duties and responsibilities',
+        translate=True
+    )
+
+    _sql_constraints = [
+        (
+            'check_salary_range',
+            'CHECK(salary_min <= salary_max)',
+            'Minimum must be less than or equal to maximum'
+        ),
+        (
+            'check_salary_non_negative',
+            'CHECK(salary_min >= 0 AND salary_max >= 0)',
+            'Salary values must be greater than or equal to zero'
+        ),
+    ]

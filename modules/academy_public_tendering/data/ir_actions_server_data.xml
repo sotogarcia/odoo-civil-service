@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+    <data noupdate="0">
+
+        <record id="process_open_public_url" model="ir.actions.server">
+            <field name="name">View publication</field>
+            <field name="model_id" ref="academy_public_tendering.model_academy_public_tendering_process"/>
+            <field name="binding_model_id" ref="academy_public_tendering.model_academy_public_tendering_process"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = {
+                    "type": "ir.actions.act_url",
+                    "url": "/civil-service/selection-process/%s" % (record.slug or record.token),
+                    "target": "new",
+                }
+            </field>
+        </record>
+
+    </data>
+</openerp>

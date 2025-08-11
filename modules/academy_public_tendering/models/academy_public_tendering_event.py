@@ -6,7 +6,7 @@
 
 from odoo import models, fields, api
 from odoo.tools.translate import _
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, UserError
 from logging import getLogger
 
 
@@ -134,6 +134,18 @@ class AcademyPublicTenderingEvent(models.Model):
 
         return value_dict
 
+    effective_url = fields.Char(
+        string='Effective URL',
+        required=False,
+        readonly=True,
+        index=False,
+        default=None,
+        help=('If the attachment is a URL, shows it; if it is a file, gives '
+              'download URL'),
+        translate=False,
+        related='ir_atachment_id.effective_url'
+    )
+
     @api.model
     def create(self, values):
         """ Touches related tendering processes to ensure state_id
@@ -210,3 +222,39 @@ class AcademyPublicTenderingEvent(models.Model):
             body = body_format.format(record.name, process.name)
             process.message_post(
                 body=body, subject=subject, subtype_id=subtype.id)
+
+    def download_attachment(self):
+        self.ensure_one()
+
+        attachment = self.ir_atachment_id
+
+        if not attachment:
+            result = {
+                'type': 'ir.actions.client',
+                'tag': 'display_notification',
+                'params': {
+                    'title': 'No attachment',
+                    'message': 'There is no document linked to this event.',
+                    'sticky': False,
+                    'type': 'warning',
+                }
+            }
+
+        elif attachment.type == 'url':
+            result =  {
+                'type': 'ir.actions.act_url',
+                'url': attachment.url,
+                'target': 'new'
+            }
+
+        elif attachment.type == 'binary':
+            result = {
+                'type': 'ir.actions.act_url',
+                'url': '/web/content/{}/?download=true'.format(attachment.id),
+                'target': 'new'
+            }
+
+        else:
+            raise UserError("Unsupported attachment type.")
+
+        return result

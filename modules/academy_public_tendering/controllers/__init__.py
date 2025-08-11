@@ -4,5 +4,4 @@
 #    __openerp__.py file at the root folder of this module.                   #
 ###############################################################################
 
-from . import models
-from . import controllers
+from . import route_civil_service_selection_process

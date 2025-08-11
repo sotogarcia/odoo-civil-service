@@ -5,8 +5,9 @@
 ###############################################################################
 
 from odoo import models, fields, api
-from logging import getLogger
 
+from logging import getLogger
+from uuid import uuid4
 
 _logger = getLogger(__name__)
 
@@ -40,6 +41,18 @@ class AcademyPublicTenderingPublicAdministration(models.Model):
         auto_join=False
     )
 
+    token = fields.Char(
+        string='Token',
+        required=True,
+        readonly=True,
+        index=True,
+        default=lambda self: str(uuid4()),
+        help='Unique token used to track this answer',
+        translate=False,
+        copy=False,
+        track_visibility='always'
+    )
+    
     public_administration_type_id = fields.Many2one(
         string='Type',
         required=True,
@@ -68,6 +81,14 @@ class AcademyPublicTenderingPublicAdministration(models.Model):
         auto_join=False,
         limit=None
     )
+
+    _sql_constraints = [
+        (
+            'unique_token',
+            'UNIQUE(token)',
+            'The token must be unique.'
+        )
+    ]
 
     def _ensure_civil_service_category(self, values):
         cat_ops = values.get('category_id', [[6, False, []]])

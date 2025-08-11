@@ -22,7 +22,9 @@
     'depends': [
         'base',
         'academy_base',
-        'record_ownership'
+        'record_ownership',
+        'partner_fax',
+        'attachment_effective_url'
     ],
 
     # always loaded
@@ -38,6 +40,7 @@
         'data/academy_public_tendering_public_administration_type_data.xml',
         'data/academy_public_tendering_public_administration_data.xml',
         'data/academy_public_tendering_event_type_data.xml',
+        'data/ir_actions_server_data.xml',
         'data/ir_cron.xml',
         'data/mail_message_subtype_data.xml',
 
@@ -58,6 +61,7 @@
 
         'views/academy_public_tendering.xml',
 
+        'views/ir_attachment_view.xml',
         'views/academy_public_tendering_employment_group_view.xml',
         'views/academy_public_tendering_exam_type_view.xml',
         'views/academy_public_tendering_hiring_type_view.xml',
@@ -74,6 +78,8 @@
         'views/academy_training_action_view.xml',
         'views/academy_training_action_enrolment_view.xml',
         'views/academy_public_tendering_required_specialization_view.xml',
+
+        'views/route_civil_service_selection_process_tmpl.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
